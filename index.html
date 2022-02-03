@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Personal Site | v2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Mr.Who</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#hobbies" onclick="toggleMenu();">Hobbies</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Works</a></li>
+            <li><a href="#testimonial" onclick="toggleMenu();">Quotes</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">End</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hi, I'm<br><span>Mr.Who</span></h2>
+            <h3>A programmer, artist, book lover and who have a will to learn more.</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>Hi,</h3>
+                <p>I Am a 14 years old student who wants to learn many things like Programming, 3d Modelling, Animation, etc.</p>
+            </div>
+            <div class="w50">
+                <img class="center1" src="img/me.png">
+            </div>
+        </div>
+    </section>
+    <section class="hobbies" id="hobbies">
+        <div class="heading white">
+            <h2>Hobbies</h2>
+            <p>I have plenty Of hobbies too.</p>
+        </div>
+        <div class="content">
+            <div class="hobbiesBx">
+                <img src="img/coding.png">
+                <h2>Coding</h2>
+                <p>Working with Python, Node.js,html and css and Want to Learn More.</p>
+            </div>
+            <div class="hobbiesBx">
+                <img src="img/piano.png">
+                <h2>Piano</h2>
+                <p>I am not talking about the keyboard one, I am Taking about the real Piano.</p>
+            </div>
+            <div class="hobbiesBx">
+                <img src="img/book.png">
+                <h2>Reading</h2>
+                <p>I like Reading Books, especially Novels, Biographies, and Books with useful information.</p>
+            </div>
+            <div class="hobbiesBx">
+                <img src="img/brush.png">
+                <h2>Drawing</h2>
+                <p>I also like drawing. I mostly use hb pencils and colour pencils for making these.</p>
+            </div>
+            <div class="hobbiesBx">
+                <img src="img/people.png">
+                <h2>Making friends</h2>
+                <p>I wanna Make Many Friends, but still i don't have that much<br>:( .</p>
+            </div>
+            <div class="hobbiesBx">
+                <img src="img/anime.png">
+                <h2>Anime/Movies</h2>
+                <p>I like to watch Anime and movies but i Cannot find good ones.</p>
+            </div>
+        </div>
+    </section>
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>Works</h2>
+            <p>Some of My works I made In few Months including some sketchs and projects.</p>
+        </div>
+        <div class="content">
+            <div class="workBx" class="center">
+                <img src="img/work1.png">
+            </div>
+            <div class="workBx" class="center">
+                <img src="img/work2.png">
+            </div>
+            <div class="workBx" class="center">
+                <img src="img/work3.png">
+            </div>
+            <div class="workBx" class="center">
+                <img src="img/work4.png">
+            </div>
+        </div>
+        <div class="heading">
+           <a href="#" class="btn">More Coming soon</a>
+        </div>
+    </section>
+    <section class="testimonial" id="testimonial">
+
+        <div class="heading">
+
+            <h2>Quotes</h2>
+            <p>Some Quotes From Some Awesome People</p>
+        </div>
+        <div class="content">
+            <div class="testimonialBx">
+                <p>" One, remember to look up at the stars and not down at your feet. Two, never give up work. Work gives you meaning and purpose and life is empty without it. Three, if you are lucky enough to find love, remember it is there and don't throw it away. "</p>
+                <h3>-Stephen Hawking<br><span>English theoretical physicist</span></h3>
+            </div>
+            <div class="testimonialBx">
+                <p>" If you get up in the morning and think the future is going to be better, it is a bright day. Otherwise, it's not "</p>
+                <h3>-Elon Musk<br><span>CEO of Tesla</span></h3>
+            </div>
+            <div class="testimonialBx">
+
+                <p>" Life is a daring adventure or nothing at all. "</p>
+
+                <h3>-Helen Keller<br><span>American author</span></h3>
+            </div>
+            <div class="testimonialBx">
+
+                <p>" Only a life lived for others is a life worthwhile. "</p>
+
+                <h3>-Albert Einstein<br><span>Theoretical physicist</span></h3>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>End</h2>
+            <p>That's It, Hope You Have a Good Day.</p>
+        </div>
+        </section>
+    <div class="copyright">
+        <p>Copyright &copy 2022 Mr.Who. All Right Reserve</p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+            var  menuToggle = document.querySelector('.toggle');
+            var  menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active')
+            menu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
