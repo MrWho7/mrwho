@@ -15,9 +15,9 @@ section
 {
     position: relative;
     min-height: 100vh;
-    background: url(img/bg1.png);
+    background: url(img/anibg.gif);
     background-size: cover;
-    background-position: right;
+    background-position: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,6 +31,7 @@ section
 }
 .banner h2 span
 {
+  color: #3DCFD3;
     font-size: 1.5em;
     font-weight: 700;
 }
@@ -39,6 +40,18 @@ section
     font-size: 1.5em;
     color: #fff;
     font-weight: 500;
+}
+.sci li img
+{
+  margin: 0.2rem;
+  height: 100px;
+  width: 100px;
+    transform: scale(0.5);
+    opacity: 0.7;
+}
+.sci li img:hover
+{
+    opacity: 1;
 }
 .btn
 {
